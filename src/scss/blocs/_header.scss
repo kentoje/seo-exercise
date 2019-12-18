@@ -9,7 +9,12 @@
   justify-content: center;
   min-width: 100vw;
   height: 90px;
+  transition: transform .25s ease-in-out;
   background-color: $white;
+
+  &.hidden {
+    transform: translateY(-90px);
+  }
 
   &__logo {
     position: absolute;
