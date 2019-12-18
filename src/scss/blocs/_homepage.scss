@@ -14,18 +14,13 @@ main {
   &__day {
     margin-top: 130px;
     margin-bottom: 40px;
+    font-size: $big--title;
   }
 
-  &__container {
+  &__content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
-    @at-root #{$root}__content {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
 
     @at-root #{$root}__article {
       width: calc(50% - 10px);
