@@ -24,14 +24,12 @@
     height: 100%;
     cursor: pointer;
 
-    // CHANGE LATER ON
-    .test {
+    .logo__container {
       width: 40px;
       height: 40px;
-      background-color: lightgreen;
       margin: 0 25px;
     }
-    // CHANGE LATER ON
+    
     @at-root #{$root}__text {
       display: flex;
       flex-direction: column;

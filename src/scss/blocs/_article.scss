@@ -1,0 +1,92 @@
+.article {
+  padding: 90px;
+  padding-bottom: 180px;
+  height: 100%;
+
+  &__cover {
+    height: 660px;
+    width: 100%;
+    background-color: lightseagreen;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__container {
+    transform: translateY(-160px);
+  }
+
+  &__heading {
+    background: $black;
+    padding: $medium--margin;
+    border-radius: 5px;
+    color: $white;
+    max-width: 980px;
+    margin: auto;
+  }
+
+  &__title {
+    margin-top: $light--margin;
+    font-size: $big--title;
+    margin-bottom: $light--margin;
+  }
+
+  &__text {
+    font-size: $normal-text;
+    line-height: 1.5;
+    margin-bottom: $light--margin;
+  }
+
+  &__content {
+    max-width: 680px;
+    margin: auto;
+    margin-top: $medium--margin;
+    color: $black;
+  }
+
+  &__chapter {
+    margin-bottom: $medium--margin;
+  }
+
+  &__chapter__title {
+    font-size: $small--title;
+    margin-bottom: $medium--margin;
+    text-align: center;
+  }
+
+  &__figure {
+    margin-bottom: $medium--margin;
+  }
+
+  &__image {
+    height: 360px;
+    width: 100%;
+    background: salmon;
+    margin-bottom: $thin--margin;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__figcaption {
+    text-align: center;
+    font-size: $small--text;
+    color: $lighter--black;
+    font-style: italic;
+  }
+
+  &__list {
+    margin: $light--margin;
+    margin-bottom: 0;
+  }
+
+  &__list__item:not(:last-child) {
+    margin-bottom: $thin--margin;
+  }
+}
