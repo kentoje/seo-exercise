@@ -3,18 +3,20 @@
 
   position: fixed;
   left: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   max-width: 90px;
   min-width: 90px;
-  background-color: lightgreen;
 
   &__content {
+    display: flex;
     transform: rotate(-90deg);
 
     @at-root #{$root-search}__text {
+      margin-left: $light--margin;
       font-size: $normal-text;
     }
   }
@@ -25,13 +27,13 @@
 
   position: fixed;
   right: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   max-width: 90px;
   min-width: 90px;
-  background-color: lightskyblue;
 
   &__content {
     transform: rotate(90deg);

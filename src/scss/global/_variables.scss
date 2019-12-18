@@ -1,4 +1,5 @@
 // Font-size
+$insane--letter: 500px;
 $big--title: 30px;
 $small--title: 24px;
 $normal-text: 16px;
@@ -7,8 +8,12 @@ $small--text: 14px;
 // Color
 $dark--blue: #2600BF;
 $white: #fff;
+$black: #101010;
 
 // Margin
 $light--margin: 20px;
 $medium--margin: 40px;
 $big--margin: 60px;
+
+// Others
+$translate--value: 5px, -5px, -20px;

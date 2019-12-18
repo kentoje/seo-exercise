@@ -3,13 +3,13 @@
 
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 100vw;
   height: 90px;
-  background-color: coral;
+  background-color: $white;
 
   &__logo {
     position: absolute;
@@ -17,14 +17,25 @@
     display: flex;
     align-items: center;
     height: 100%;
+    cursor: pointer;
 
     // CHANGE LATER ON
     .test {
-      width: 50%;
-      height: 100%;
-      background-color: lightpink;
+      width: 40px;
+      height: 40px;
+      background-color: lightgreen;
+      margin: 0 25px;
     }
     // CHANGE LATER ON
+    @at-root #{$root}__text {
+      display: flex;
+      flex-direction: column;
+
+      @at-root #{$root}__indie {
+        font-size: 34px;
+        font-family: 'majesti', serif;
+      }
+    }
   }
 
   &__options {
@@ -33,6 +44,7 @@
     @at-root #{$root}__option {
       margin: 0 30px;
       font-size: $normal-text;
+      cursor: pointer;
 
       &:first-child {
         margin-left: 0;
