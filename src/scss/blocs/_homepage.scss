@@ -9,10 +9,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   padding: 0 90px;
+  height: 100vh;
 
   &__day {
-    margin-top: 130px;
+    margin-top: 100px;
     margin-bottom: 40px;
     font-size: $big--title;
   }
@@ -24,35 +26,39 @@ main {
 
     @at-root #{$root}__article {
       width: calc(50% - 10px);
+    }
+  }
+}
 
-      .tempomock {
-        min-height: 394px;
-        width: 100%;
-        background-color: lightseagreen;
+.week {
+  $root: &;
 
-        @at-root #{$root}__label {
-          display: block;
-          margin-top: $light--margin;
-          width: 102px;
-          color: $white;
-          padding: 12px 0;
-          background-color: $dark--blue;
-          font-size: $small--text;
-          text-align: center;
-          border-radius: 5px;
-        }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 90px;
+  height: 100vh;
 
-        @at-root #{$root}__title {
-          margin-top: $light--margin;
-          font-size: $small--title;
-        }
+  &__day {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: $big--title;
+  }
 
-        @at-root #{$root}__desc {
-          margin-top: $light--margin;
-          font-size: $small--text;
-          line-height: 1.7;
-        }
-      }
+  &__naming {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: $big--title;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+
+    @at-root #{$root}__article {
+      margin: 0 10px;
     }
   }
 }

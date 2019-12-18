@@ -1,0 +1,35 @@
+.article {
+  $root: &;
+
+  &__card {
+
+    .tempomock {
+      min-height: 394px;
+      width: 100%;
+      background-color: lightseagreen;
+
+      @at-root #{$root}__label {
+        display: block;
+        margin-top: $light--margin;
+        width: 102px;
+        color: $white;
+        padding: 12px 0;
+        background-color: $dark--blue;
+        font-size: $small--text;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      @at-root #{$root}__title {
+        margin-top: $light--margin;
+        font-size: $small--title;
+      }
+
+      @at-root #{$root}__desc {
+        margin-top: $light--margin;
+        font-size: $small--text;
+        line-height: 1.7;
+      }
+    }
+  }
+}
