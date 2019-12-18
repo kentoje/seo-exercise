@@ -1,0 +1,43 @@
+.search {
+  $root-search: &;
+
+  position: fixed;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 90px;
+  min-width: 90px;
+  background-color: lightgreen;
+
+  &__content {
+    transform: rotate(-90deg);
+
+    @at-root #{$root-search}__text {
+      font-size: $normal-text;
+    }
+  }
+}
+
+.random {
+  $root-random: &;
+
+  position: fixed;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 90px;
+  min-width: 90px;
+  background-color: lightskyblue;
+
+  &__content {
+    transform: rotate(90deg);
+
+    @at-root #{$root-random}__text {
+      font-size: $normal-text;
+    }
+  }
+}

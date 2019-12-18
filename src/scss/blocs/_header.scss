@@ -1,0 +1,46 @@
+.header {
+  $root: &;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  height: 90px;
+  background-color: coral;
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    // CHANGE LATER ON
+    .test {
+      width: 50%;
+      height: 100%;
+      background-color: lightpink;
+    }
+    // CHANGE LATER ON
+  }
+
+  &__options {
+    display: flex;
+
+    @at-root #{$root}__option {
+      margin: 0 30px;
+      font-size: $normal-text;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
