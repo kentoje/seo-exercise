@@ -17,6 +17,10 @@ main {
   padding: 0 90px;
   height: 100vh;
 
+  @include under-880 {
+    height: auto;
+  }
+
   &__day {
     margin-top: 100px;
     margin-bottom: 40px;
@@ -29,10 +33,29 @@ main {
     justify-content: space-between;
     width: 100%;
 
+    @include under-880 {
+      flex-direction: column;
+      align-items: center;
+    }
+
     @at-root #{$root}__article {
       width: calc(50% - 10px);
       transition: transform .15s ease-in-out;
       cursor: pointer;
+
+      &:first-child {
+        @include under-880 {
+          margin-bottom: 24px;
+        }
+      }
+
+      @include under-880 {
+        width: 65%;
+      }
+
+      @include under-500 {
+        width: 100%;
+      }
 
       &:hover {
         transform: translate3d($translate--value);
@@ -43,6 +66,10 @@ main {
         padding-top: 53%;
         width: 100%;
         overflow: hidden;
+
+        @include under-880 {
+          padding-top: 65%;
+        }
 
         img {
           position: absolute;
@@ -70,6 +97,11 @@ main {
   padding: 0 90px;
   height: 100vh;
 
+  @include under-880 {
+    flex-direction: column;
+    height: auto;
+  }
+
   &__naming {
     margin-top: 100px;
     margin-bottom: 40px;
@@ -81,11 +113,24 @@ main {
     display: flex;
     width: 140%;
 
+
+    @include under-880 {
+      flex-direction: column;
+      width: 65%;
+    }
+
+    @include under-500 {
+      width: 100%;
+    }
+
     @at-root #{$root}__article {
       margin: 0 10px;
-      //min-width: 30%;
       transition: transform .15s ease-in-out;
       cursor: pointer;
+
+      @include under-880 {
+        margin: 16px 0;
+      }
 
       &:hover {
         transform: translate3d($translate--value);
@@ -139,6 +184,11 @@ main {
     width: 100%;
     height: 100%;
 
+    @include under-880 {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
     @at-root #{$root}__content {
       position: relative;
       width: 100%;
@@ -161,6 +211,10 @@ main {
         left: -25px;
         bottom: -90px;
         font-size: $insane--letter;
+
+        @include under-500 {
+          font-size: 380px;
+        }
       }
 
       @at-root #{$root}__word {
@@ -169,6 +223,11 @@ main {
         right: 80px;
         transform: translateY(-50%);
         font-size: $big--title;
+
+        @include under-500 {
+          top: 30%;
+          right: 16px;
+        }
       }
     }
   }

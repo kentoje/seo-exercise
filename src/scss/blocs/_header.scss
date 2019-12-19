@@ -12,6 +12,31 @@
   transition: transform .25s ease-in-out;
   background-color: $white;
 
+  @include under-1064 {
+    flex-direction: column;
+  }
+
+  &--desktop {
+    @include under-880 {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: none;
+    background-color: $white;
+    height: 100px;
+    width: 100vw;
+
+    @include under-880 {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &.hidden {
     transform: translateY(-90px);
   }
@@ -23,6 +48,15 @@
     align-items: center;
     height: 100%;
     cursor: pointer;
+
+    &--mobile {
+      position: initial;
+      transform: scale(0.8);
+    }
+
+    @include under-1064 {
+      position: initial;
+    }
 
     .logo__container {
       width: 40px;
@@ -55,6 +89,38 @@
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    background-color: $black;
+
+    &--rows {
+      position: relative;
+      width: 24px;
+      height: 4px;
+
+      &::after {
+        position: absolute;
+        top: -7px;
+        width: 24px;
+        height: 4px;
+        background-color: $black;
+        content: '';
+      }
+
+      &::before {
+        position: absolute;
+        bottom: -7px;
+        width: 24px;
+        height: 4px;
+        background-color: $black;
+        content: '';
       }
     }
   }

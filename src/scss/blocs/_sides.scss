@@ -20,6 +20,10 @@
       font-size: $normal-text;
     }
   }
+
+  @include under-880 {
+    display: none;
+  }
 }
 
 .random {
@@ -41,5 +45,9 @@
     @at-root #{$root-random}__text {
       font-size: $normal-text;
     }
+  }
+
+  @include under-880 {
+    display: none;
   }
 }

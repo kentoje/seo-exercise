@@ -8,6 +8,10 @@
   color: $white;
   background-color: $dark--blue;
 
+  @include under-500 {
+    padding: 54px 40px;
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -22,6 +26,10 @@
 
     li {
       margin: 0 40px;
+
+      @include under-680 {
+        margin: 0 15px;
+      }
 
       &.twitter-logo {
         margin-right: 60px;
