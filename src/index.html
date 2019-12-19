@@ -29,9 +29,9 @@
     <meta name="twitter:title" content="Indie eyes - Art, Design, Tech & Jeux indés">
     <meta name="twitter:description" content="Avec Indie Eyes, suivez l'actualité de l'art, du design, de la tech et du jeu vidéo indépendant avec des articles, des vidéos, le tout en ouvrant votre perception.">
   </head>
-  <body>
+  <body itemscope itemtype="https://schema.org/WebPage">
     <header class="header">
-      <a href="./index.html" class="header__logo">
+      <a href="./index.html" class="header__logo" itemprop="url" title="Lien vers la page d'accueil">
         <svg
             class="logo__container"
             width="40"
@@ -76,7 +76,7 @@
             </g>
           </svg>
         <div class="header__text">
-          <h1 class="header__indie">
+          <h1 class="header__indie" role="heading">
             Indie eyes
           </h1>
           <span class="header__shifting">
@@ -85,11 +85,11 @@
         </div>
       </a>
       <ul class="header__options">
-        <li class="header__option">ART</li>
-        <li class="header__option">DESIGN</li>
-        <li class="header__option">TECH</li>
-        <li class="header__option">JEUX</li>
-        <li class="header__option">À PROPOS</li>
+        <a title="Lien vers la rubrique Art" href="#" itemprop="url" class="header__option"><li>ART</li></a>
+        <a title="Lien vers la rubrique Design" href="#" itemprop="url" class="header__option"><li>DESIGN</li></a>
+        <a title="Lien vers la rubrique Tech" href="#" itemprop="url" class="header__option"><li>TECH</li></a>
+        <a title="Lien vers la rubrique Jeux" href="#" itemprop="url" class="header__option"><li>JEUX</li></a>
+        <a title="Lien vers la section A propos" href="#" itemprop="url" class="header__option"><li>À PROPOS</li></a>
       </ul>
     </header>
     <div class="search">
@@ -126,11 +126,12 @@
           Aujourd’hui
         </h3>
         <div class="selection__content">
-          <a href="./pages/article.html" class="selection__article article__card">
+          <a href="./pages/article.html" class="selection__article article__card" itemprop="url" title="Lien vers l'article">
             <div class="selection__image">
               <img
                 src="./assets/images/journey.png"
-                alt="Cover of Journey the video game"
+                alt="Image du jeu vidéo Journey"
+                itemprop="image"
               />
             </div>
             <span class="selection__label article__label">
@@ -145,11 +146,12 @@
               et est dès maintenant téléchargeable sur...
             </p>
           </a>
-          <div class="selection__article article__card">
+          <a href="#" class="selection__article article__card" itemprop="url" title="Lien vers l'article">
             <div class="selection__image">
               <img
                 src="./assets/images/motion.png"
-                alt="Image displaying motion within text"
+                alt="Image de Motion design et Typographie"
+                itemprop="image"
               />
             </div>
             <span class="selection__label article__label">
@@ -163,7 +165,7 @@
               scelerisque viverra semper metus, arcu. Semper aliquam eget
               volutpat id quisque pretium...
             </p>
-          </div>
+          </a>
         </div>
         <div class="eye">
           <div class="eye__content">
@@ -178,11 +180,12 @@
           Cette semaine
         </h3>
         <div class="week__content">
-          <div class="week__article article__card">
+          <a href="#" class="week__article article__card" itemprop="url" title="Lien vers l'article">
             <div class="week__image">
               <img
                 src="./assets/images/modak.jpg"
-                alt="Image displaying Hindi alphabet"
+                alt="Image de l'alphabet Hindi"
+                itemprop="image"
               />
             </div>
             <span class="week__label article__label">
@@ -196,12 +199,13 @@
               scelerisque viverra semper metus, arcu. Semper aliquam eget
               volutpat id quisque pretium...
             </p>
-          </div>
-          <div class="week__article article__card">
+          </a>
+          <a href="#" class="week__article article__card" itemprop="url" title="Lien vers l'article">
             <div class="week__image">
               <img
                 src="./assets/images/anoushka.jpg"
-                alt="Image showing a street art cover"
+                alt="Image montrant une oeuvre de Street Art"
+                itemprop="image"
               />
             </div>
             <span class="week__label article__label">
@@ -215,12 +219,13 @@
               scelerisque viverra semper metus, arcu. Semper aliquam eget
               volutpat id quisque pretium...
             </p>
-          </div>
-          <div class="week__article article__card">
+          </a>
+          <a href="#" class="week__article article__card" itemprop="url" title="Lien vers l'article">
             <div class="week__image">
               <img
                 src="./assets/images/tri.png"
-                alt="Image of baba independant logo"
+                alt="Image du logo Baba is you"
+                itemprop="image"
               />
             </div>
             <span class="week__label article__label">
@@ -234,12 +239,13 @@
               scelerisque viverra semper metus, arcu. Semper aliquam eget
               volutpat id quisque pretium...
             </p>
-          </div>
-          <div class="week__article article__card">
+          </a>
+          <a href="#" class="week__article article__card" itemprop="url" title="Lien vers l'article">
             <div class="week__image">
               <img
                 src="./assets/images/alert.jpg"
-                alt="Image with alert bubbles"
+                alt="Image avec des bulles d'alertes"
+                itemprop="image"
               />
             </div>
             <span class="week__label article__label">
@@ -253,7 +259,7 @@
               scelerisque viverra semper metus, arcu. Semper aliquam eget
               volutpat id quisque pretium...
             </p>
-          </div>
+          </a>
         </div>
         <div class="eye week__eye">
           <div class="eye__content">
