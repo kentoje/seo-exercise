@@ -1,0 +1,11 @@
+# Robots.txt of indie-eyes.netlify.com
+
+# Group 1
+User-agent: *
+Disallow: /admin/
+Disallow: /press/
+Disallow: /jobs/
+Disallow: /cookies/
+Disallow: /contact/
+
+Sitemap: https://indie-eyes.netlify.com/sitemap.xml
