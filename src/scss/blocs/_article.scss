@@ -3,10 +3,20 @@
   padding-bottom: 180px;
   height: 100%;
 
+  @include under-1064 {
+    padding: 10px;
+    padding-bottom: $medium--margin;
+  }
+  
+
   &__cover {
     height: 660px;
     width: 100%;
     background-color: lightseagreen;
+
+    @include under-1064 {
+      height: 300px;
+    }
 
     img {
       height: 100%;
@@ -17,6 +27,10 @@
 
   &__container {
     transform: translateY(-160px);
+
+    @include under-1064 {
+      transform: translateY($medium--margin);
+    }
   }
 
   &__heading {
@@ -26,6 +40,10 @@
     color: $white;
     max-width: 980px;
     margin: auto;
+
+    @include under-1064 {
+      padding: $light--margin;
+    }
   }
 
   &__title {
