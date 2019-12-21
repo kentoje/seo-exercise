@@ -11,16 +11,24 @@ link to the website: https://indie-eyes.netlify.com/
 How to use the **repository:**
 
 In your terminal **run**:
-> ```git clone https://github.com/kentoje/seo-exercise.git```
+```shell
+git clone https://github.com/kentoje/seo-exercise.git
+```
 
 **then:**
 
-> ```cd seo-exercise```
+```shell
+cd seo-exercise
+```
 
 **then:**
 
-> ```npm i```
+```shell
+npm i
+```
 
 **then:**
 
-> ```npm run dev```
+```shell
+npm run dev
+```
